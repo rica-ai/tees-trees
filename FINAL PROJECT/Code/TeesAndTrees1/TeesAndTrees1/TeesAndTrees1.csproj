@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D123AC0B-16CB-4E47-B551-C3135480F2CE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TeesAndTrees1</RootNamespace>
+    <AssemblyName>TeesAndTrees1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AE Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AE Customer.Designer.cs">
+      <DependentUpon>AE Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AE Equipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AE Equipment.Designer.cs">
+      <DependentUpon>AE Equipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AE Materials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AE Materials.Designer.cs">
+      <DependentUpon>AE Materials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AE Shirt Customized.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AE Shirt Customized.Designer.cs">
+      <DependentUpon>AE Shirt Customized.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Floriculture Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Floriculture Customer.Designer.cs">
+      <DependentUpon>Floriculture Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Floriculture Plants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Floriculture Plants.Designer.cs">
+      <DependentUpon>Floriculture Plants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FloricultureInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloricultureInventory.Designer.cs">
+      <DependentUpon>FloricultureInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="P-AE Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P-AE Customer.Designer.cs">
+      <DependentUpon>P-AE Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="P-AE Plants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P-AE Plants.Designer.cs">
+      <DependentUpon>P-AE Plants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print.Designer.cs">
+      <DependentUpon>Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print1.Designer.cs">
+      <DependentUpon>Print1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales1.Designer.cs">
+      <DependentUpon>Sales1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shirt Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shirt Customer.Designer.cs">
+      <DependentUpon>Shirt Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shirt Customized.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shirt Customized.Designer.cs">
+      <DependentUpon>Shirt Customized.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shirt Equipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shirt Equipment.Designer.cs">
+      <DependentUpon>Shirt Equipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shirt Material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shirt Material.Designer.cs">
+      <DependentUpon>Shirt Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShirtInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShirtInventory.Designer.cs">
+      <DependentUpon>ShirtInventory.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AE Customer.resx">
+      <DependentUpon>AE Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AE Equipment.resx">
+      <DependentUpon>AE Equipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AE Materials.resx">
+      <DependentUpon>AE Materials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AE Shirt Customized.resx">
+      <DependentUpon>AE Shirt Customized.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Floriculture Customer.resx">
+      <DependentUpon>Floriculture Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Floriculture Plants.resx">
+      <DependentUpon>Floriculture Plants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloricultureInventory.resx">
+      <DependentUpon>FloricultureInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P-AE Customer.resx">
+      <DependentUpon>P-AE Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P-AE Plants.resx">
+      <DependentUpon>P-AE Plants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print.resx">
+      <DependentUpon>Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print1.resx">
+      <DependentUpon>Print1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales1.resx">
+      <DependentUpon>Sales1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shirt Customer.resx">
+      <DependentUpon>Shirt Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shirt Customized.resx">
+      <DependentUpon>Shirt Customized.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shirt Equipment.resx">
+      <DependentUpon>Shirt Equipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shirt Material.resx">
+      <DependentUpon>Shirt Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShirtInventory.resx">
+      <DependentUpon>ShirtInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
